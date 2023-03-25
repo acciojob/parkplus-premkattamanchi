@@ -24,7 +24,7 @@ public class PaymentServiceImpl implements PaymentService {
         int bill=pricePerHour*numberOfHours;
         if(amountSent<bill)
             throw new Exception("Insufficient Amount");
-        if(!mode.equalsIgnoreCase("cash") ||!mode.equalsIgnoreCase("card") ||!mode.equalsIgnoreCase("upi"))
+        if(!mode.equalsIgnoreCase("cash") && !mode.equalsIgnoreCase("card") && !mode.equalsIgnoreCase("upi"))
             throw new Exception("Payment mode not detected");
         Payment payment=new Payment();
         payment.setPaymentCompleted(true);
