@@ -24,7 +24,7 @@ public class PaymentController {
             payment=paymentService.pay(reservationId,amountSent,mode);
         }
         catch(Exception e){
-            System.out.println(e.getMessage());
+
         }
         return payment;
     }

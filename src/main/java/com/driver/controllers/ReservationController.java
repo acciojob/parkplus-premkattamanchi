@@ -23,7 +23,7 @@ public class ReservationController {
            reservation=reservationService.reserveSpot(userId, parkingLotId, timeInHours, numberOfWheels);
         }
         catch(Exception e){
-            System.out.println(e.getMessage());
+
         }
         return reservation;
     }
