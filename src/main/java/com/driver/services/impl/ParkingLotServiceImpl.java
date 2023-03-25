@@ -90,11 +90,11 @@ public class ParkingLotServiceImpl implements ParkingLotService {
             for(Spot spot:spotList){
                 spotRepository1.deleteById(spot.getId());
             }
-            parkingLotRepository1.deleteById(parkingLotId);
         }
         catch(Exception e){
 
         }
+        parkingLotRepository1.deleteById(parkingLotId);
 
     }
 }
