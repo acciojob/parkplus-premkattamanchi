@@ -25,6 +25,6 @@ public class ReservationController {
         catch(Exception e){
            return null;
         }
-        return null;
+        return reservation;
     }
 }
